@@ -16,7 +16,7 @@
   padding: 152px;
 }
 
-.homepage-component__header-block {
+.homepage-component__header-container {
   max-width: 467px;
   display: flex;
   flex-direction: column;
@@ -24,20 +24,20 @@
   flex-basis: 50%;
 }
 
-.header-section__heading {
+.header-container__heading {
   font-size: 48px;
   font-weight: 500;
   line-height: 56px;
   letter-spacing: -0.002em;
 }
 
-.header-section__paragraph {
+.header-container__paragraph {
   margin: 0;
   font-weight: 400;
   line-height: 24px;
 }
 
-.homepage-component__ai-block {
+.homepage-component__ai-container {
   flex-basis: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +45,7 @@
   gap: 24px;
 }
 
-.ai-block__element {
+.ai-container__ai-box {
   box-sizing: border-box;
   width: 268px;
   min-height: 240px;
@@ -62,38 +62,38 @@
   transition: 0.5s ease-in-out;
 }
 
-.ai-block__element:hover {
+.ai-container__ai-box:hover {
   transform: translateY(-10px);
 }
 
-.element__image-frame {
+.ai-box__image-box {
   padding: 12px;
   border-radius: 16px;
 }
 
-.element__image-frame--mod-1 {
+.ai-box__image-box--mod-1 {
   background-color: var(--color-primary-block-1);
 }
 
-.element__image-frame--mod-2 {
+.ai-box__image-box--mod-2 {
   background-color: var(--color-primary-block-2);
 }
 
-.element__image-frame--mod-3 {
+.ai-box__image-box--mod-3 {
   background-color: var(--color-primary-block-3);
 }
 
-.element__image-frame--mod-4 {
+.ai-box__image-box--mod-4 {
   background-color: var(--color-primary-block-4);
 }
 
-.element__title {
+.ai-box__title {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
 }
 
-.element__description {
+.ai-box__description {
   text-align: center;
   color: var(--color-text-secondary);
   margin: 0;
@@ -107,16 +107,17 @@
     margin: 0 auto;
     gap: 24px;
   }
-  .homepage-component__header-block, .homepage-component__ai-block {
+  .homepage-component__header-container,
+  .homepage-component__ai-container {
     gap: 16px;
     max-width: 496px;
   }
 
-  .ai-block__element {
+  .ai-container__ai-box {
     width: 240px;
     min-height: 218px;
   }
-  .element__description {
+  .ai-box__description {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -124,23 +125,22 @@
 }
 
 @media (max-width: 520px) {
-  
   .homepage-component {
     padding: 48px 16px 64px 16px;
     display: block;
   }
-  .homepage-component__header-block,
-  .homepage-component__ai-block {
+  .homepage-component__header-container,
+  .homepage-component__ai-container {
     flex-basis: 100%;
   }
-  .homepage-component__header-block {
+  .homepage-component__header-container {
     margin-bottom: 16px;
   }
-  .header-section__heading {
+  .header-container__heading {
     font-size: 32px;
     line-height: 40px;
   }
-  .ai-block__element {
+  .ai-container__ai-box {
     width: 100%;
   }
 }
