@@ -3,7 +3,12 @@
 /// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
 
 :root {
-    --color-primary: #5721f2;
-    --color-on-surface: #000;
-    --color-background: #0F162D;
+  --color-primary: #0f162d;
+  --color-primary-block-1: rgba(202, 89, 255, 0.1);
+  --color-primary-block-2: rgba(108, 124, 255, 0.1);
+  --color-primary-block-3: rgba(42, 255, 255, 0.1);
+  --color-primary-block-4: rgba(255, 246, 41, 0.1);
+  --color-secondary: #272d42;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.5);
 }
