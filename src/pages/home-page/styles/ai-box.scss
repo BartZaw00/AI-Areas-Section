@@ -87,12 +87,9 @@
     width: 240px;
     min-height: 218px;
     display: block;
-    padding: 20px 0;
 
     &__image-box {
       margin: 0 94px 0 90px;
-      width: 56px;
-      height: 56px;
     }
 
     &__title {
@@ -118,15 +115,28 @@
     &__image-box {
       margin: 0 auto;
     }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .c-ai-box {
+    padding: 20px 0;
+
+    &__image-box {
+      width: 56px;
+      height: 56px;
+    }
 
     &__description {
-      font-size: 13px;
+      font-size: 14px;
     }
   }
 }
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 600px) {
   .c-ai-box {
     width: 100%;
+    min-height: 196px;
+    padding: 20px;
   }
 }
